@@ -1,0 +1,65 @@
+.containerCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.titleCard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.firstTitle, .secTitle{
+    padding: 1% 5%;
+    cursor: pointer;
+}
+.activeTitleCard{
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+.bodyContent{
+    width: 100%;
+    margin-top:0;
+
+}
+.firstContent{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.infoFor{
+    display: flex;
+    align-items: center;   
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: brown; */
+    width: 50%;
+}
+.infoFor button{
+    font-weight: 700;
+    color: white;
+    padding: 1% 5%;
+    border-radius: 100px;
+    background: rgb(255, 19, 204);
+    transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.infoFor p{
+    width: 50%;
+    margin-bottom: 3% ;
+}
+.infoFor > p:first-child{
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.imgCard{
+    width: 50%;
+    max-height: 500px;
+}

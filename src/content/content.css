@@ -38,7 +38,8 @@ img{
     color: white;
     padding: 3% 10%;
     border-radius: 100px;
-    background: rgb(147, 175, 81);
+    /* background: rgb(147, 175, 81); */
+    background: rgb(255, 19, 204);
     transition: 0.2s;
     margin-top: 8%;
   border: none;
