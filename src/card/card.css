@@ -14,14 +14,24 @@
     padding: 1% 5%;
     cursor: pointer;
 }
+.firstTitle:hover, .secTitle:hover{
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    transition: 0.2s;
+}
 .activeTitleCard{
     background-color: white;
     border-radius: 20px 20px 0 0;
 }
-.bodyContent{
+.bodyContentCard{
     width: 100%;
     margin-top:0;
-
+}
+.activeContent{
+    display: block!important;
+}
+.preFirst{
+    display: none;
 }
 .firstContent{
     background-color: white;
@@ -50,6 +60,11 @@
   border: none;
   cursor: pointer;
 }
+
+.infoFor button:hover{
+    background: rgb(33,147,90);
+}
+
 .infoFor p{
     width: 50%;
     margin-bottom: 3% ;
