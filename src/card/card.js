@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./card.css";
 
-export default function Card({ catsArr }) {
+export default function Card({ catsArr, dogArr }) {
   const [cat, setCat] = useState(true);
   const [dog, setDog] = useState(false);
 
   const catsCard = catsArr.map((item) => {
-    console.log(cat);
     return (
      
       <div className={cat ? "preFirst activeContent" : "preFirst"}>
@@ -25,6 +24,27 @@ export default function Card({ catsArr }) {
       </div>
     );
   });
+
+
+  const dogCard = dogArr.map((index) => {
+    return (
+     
+      <div className={dog ? "preFirst activeContent" : "preFirst"}>
+        <div
+          className={index.id % 2 == 0 ? "firstContent reverse" : "firstContent"}
+          key={index.id}
+        >
+          <div className="infoFor">
+            <p>{index.title}</p>
+            <p>{index.description}</p>
+            <button>Узнать подробнее</button>
+          </div>
+          <div className="imgCard">{index.imgUrl}</div>
+        </div>
+      </div>
+    );
+  });
+
 
   return (
     <div className="containerCard">
@@ -49,8 +69,9 @@ export default function Card({ catsArr }) {
         </div>
       </div>
       <div className="bodyContentCard">
-        {catsCard}
-        <div className="secContent"></div>
+        {catsCard}     
+        
+        {dogCard}
       </div>
     </div>
   );
