@@ -8,7 +8,7 @@ import {NavLink} from "react-router-dom"
 export default function Header() {
 
   const divStyle = {
-    fontSize: '12px',
+    fontSize: '15px',
   };
   const PetStyle = {
     fontSize: '18px',

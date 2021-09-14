@@ -1,6 +1,9 @@
 *{
    font-family: Comic Sans MS, Comic Sans, cursive;
 }
+body{
+    background: linear-gradient(to right, rgb(255, 219, 121), rgb(255, 187, 0));
+}
 
 .container{
     width: 90%;
@@ -8,7 +11,7 @@
 .firstCont{
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, rgb(255, 219, 121), rgb(255, 187, 0));
+    
     /* background-color: rgba(255, 192, 203, 0.781); */
     flex-direction: column;
     align-items: center;
