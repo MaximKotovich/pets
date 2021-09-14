@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./header.css";
 import PhoneIcon from '@material-ui/icons/Phone';
 import PetsIcon from '@material-ui/icons/Pets';
+import {NavLink} from "react-router-dom"
 
 export default function Header() {
 
@@ -29,16 +30,16 @@ export default function Header() {
            <PhoneIcon style={divStyle}></PhoneIcon>+375338562365
           </li>
           <li>
-            <a href="#">Главная</a>
+            <NavLink to="/">Главная</NavLink>
           </li>
           <li>
-            <a href="#">Друзья</a>
+            <NavLink to="/friends">Друзья</NavLink>
           </li>
           <li>
-            <a href="#">О сервисе</a>
+            <NavLink to="/service">О сервисе</NavLink>
           </li>
           <li>
-            <a href="#">Контакты</a>
+           <NavLink to="/contacts">Контакты</NavLink>
           </li>
         </ul>
       </div>
