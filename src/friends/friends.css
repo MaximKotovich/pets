@@ -1,0 +1,12 @@
+.bodyFriends{
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+}
+.dogImage{
+  
+}
+img{
+    max-height: 500px;
+    
+}
